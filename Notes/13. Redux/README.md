@@ -71,4 +71,12 @@ if we dont do this , we get this error -> ***A non-serializable value was detect
 7. It is literally named **Selector** because we are selecting a certain part of the store. <>br><br>
 8. In the older version of **Redux** , it was offcially not allowed to mutate the state but with the new versions , now things cannot be done without mutating the state. Nor do we have to return it.<br><br>
 9. Behind the scene , it is actually creating an Immuatable object and not letting it mutate but for the developers , we can and have to mutate the state as Redux uses **Immer** library internally to first mutate the state and then find the diff between them and then just create an **Immutatble** state for it internally. <br><br>
-10. [Read About RTK Query](https://redux-toolkit.js.org/rtk-query/overview)
+10. [Read About RTK Query](https://redux-toolkit.js.org/rtk-query/overview)<br><br>
+11. So , when we subscribe to a store directly , like
+```
+const store = useSelector((store) => store);
+
+const cartItems = store.cart.items
+```
+We can subscribe to the entire ***store*** also , but the issue is , it is inefficient because this store gets triggered whenever there is any change in the entire store , so not efficient way to approach it. <br><br>
+
