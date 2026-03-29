@@ -10,7 +10,7 @@
 
 like above
 
-3. We can and should ***Destrcutre*** the props which we are passing because it makes better of code readability as we dont have to do props.property and again and again.<br><br>
+3. We can and should ***Destructure*** the props which we are passing because it makes better of code readability as we dont have to do props.property and again and again.<br><br>
 
 ```
     const RestaurantCard = (props) => {
