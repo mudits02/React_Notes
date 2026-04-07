@@ -36,6 +36,8 @@ But in **functional** components we declare them individually , but in the backg
          - Child 1 Render
          - Child 2 Constrcutor
          - Child 2 Render
+         - <DOM UPDATED - IN A SINGLE BATCH>
+  
        - Child 1 Did Mount
        - Child 2 Did Mount
     - Parent Did Mount
